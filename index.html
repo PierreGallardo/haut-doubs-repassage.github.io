@@ -20,45 +20,68 @@
     </style>
 </head>
 <body class="bg-gray-100">
-    <nav class="bg-gray-800 bg-opacity-75 text-white text-2xl py-6">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <div class="flex items-center space-x-6">
-                <img src="./images/logo-haut-doubs-repassage.svg" alt="Logo Haut Doubs Repassage" class="h-24">
-            </div>
-            <ul class="flex space-x-6 ml-auto">
-                <li>
-                    <a href="#accueil" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">
-                        Accueil
-                    </a>
-                </li>
-                <li>
-                    <a href="#association" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">
-                        L'Association
-                    </a>
-                </li>
-                <li>
-                    <a href="#atelier" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">
-                        Atelier Chantier d'Insertion
-                    </a>
-                </li>
-                <li>
-                    <a href="#actualites" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">
-                        Actualités
-                    </a>
-                </li>
-                <li>
-                    <a href="#services" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">
-                        Services
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+      <!-- Navigation -->
+  <nav class="bg-gray-800 bg-opacity-75 text-white text-2xl py-6 relative">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-6">
+        <img src="./images/logo-haut-doubs-repassage.svg" alt="Logo Haut Doubs Repassage" class="h-24">
+      </div>
+      <!-- Bouton Burger visible uniquement sur mobile -->
+      <div class="md:hidden">
+        <button id="burger" class="text-white focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Menu classique pour écran larges -->
+      <ul class="hidden md:flex space-x-6 ml-auto">
+        <li>
+          <a href="#accueil" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">Accueil</a>
+        </li>
+        <li>
+          <a href="#association" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">L'Association</a>
+        </li>
+        <li>
+          <a href="#atelier" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">Atelier Chantier d'Insertion</a>
+        </li>
+        <li>
+          <a href="#actualites" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">Actualités</a>
+        </li>
+        <li>
+          <a href="#services" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">Services</a>
+        </li>
+        <li>
+          <a href="#contact" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Menu Burger à afficher sur mobile -->
+    <div id="mobileMenu" class="hidden md:hidden">
+      <ul class="px-4 pt-2 pb-4 bg-gray-800">
+        <li class="py-2">
+          <a href="#accueil" class="block text-white">Accueil</a>
+        </li>
+        <li class="py-2">
+          <a href="#association" class="block text-white">L'Association</a>
+        </li>
+        <li class="py-2">
+          <a href="#atelier" class="block text-white">Atelier Chantier d'Insertion</a>
+        </li>
+        <li class="py-2">
+          <a href="#actualites" class="block text-white">Actualités</a>
+        </li>
+        <li class="py-2">
+          <a href="#services" class="block text-white">Services</a>
+        </li>
+        <li class="py-2">
+          <a href="#contact" class="block text-white">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
     <section id="actualites" class="container mx-auto px-4 py-12">
     <h2 class="text-3xl font-bold text-center mb-8">Dernières Actualités</h2>
@@ -187,5 +210,11 @@
             <p>Haut Doubs Repassage - Tous droits réservés</p>
         </div>
     </footer>
+    <script>
+    document.getElementById('burger').addEventListener('click', function() {
+      var mobileMenu = document.getElementById('mobileMenu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
