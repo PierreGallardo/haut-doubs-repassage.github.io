@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Accueil - Haut Doubs Repassage</title>
+    <style>
+    .degrade-bg {
+        background: linear-gradient(to right, rgba(0,173,238,1), rgba(3,98,127,1));
+    }
+
+    .lien-transition {
+        transition: background 300ms ease-in-out;
+    }
+
+    .hover\:degrade-bg-bouton:hover {
+        background: linear-gradient(to left, rgba(0,173,238,1), rgba(3,98,127,1));
+    }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-800 bg-opacity-75 text-white text-2xl py-6">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <img src="./images/logo-haut-doubs-repassage.svg" alt="Logo Haut Doubs Repassage" class="h-24">
+            </div>
+            <ul class="flex space-x-6 ml-auto">
+                <li>
+                    <a href="#accueil" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="#association" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">
+                        L'Association
+                    </a>
+                </li>
+                <li>
+                    <a href="#atelier" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">
+                        Atelier Chantier d'Insertion
+                    </a>
+                </li>
+                <li>
+                    <a href="#actualites" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">
+                        Actualités
+                    </a>
+                </li>
+                <li>
+                    <a href="#services" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="text-white rounded px-4 py-2 lien-transition hover:degrade-bg-bouton">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="actualites" class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Dernières Actualités</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <article class="bg-white rounded shadow p-6">
+        <h3 class="text-2xl font-semibold mb-2">Actualité 1</h3>
+        <p class="text-gray-700">Découvrez les nouveautés et événements récents organisés par notre association.</p>
+      </article>
+      <article class="bg-white rounded shadow p-6">
+        <h3 class="text-2xl font-semibold mb-2">Actualité 2</h3>
+        <p class="text-gray-700">Retour sur nos dernières initiatives solidaires et les impacts sur la communauté.</p>
+      </article>
+      <article class="bg-white rounded shadow p-6">
+        <h3 class="text-2xl font-semibold mb-2">Actualité 3</h3>
+        <p class="text-gray-700">Mise à jour sur le développement de nos ateliers et projets d'insertion.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Section Présentation de l'Association -->
+<section id="association" class="container mx-auto px-4 py-12 bg-gray-200 rounded shadow-2xl">
+    <h2 class="text-3xl font-bold text-center mb-8">L'Association</h2>
+    <div class="max-w-3xl mx-auto">
+        <p class="text-gray-800 text-lg">
+            Notre association s'engage dans une démarche solidaire et innovante en offrant des services de repassage de qualité tout en renforçant le lien social. Nous œuvrons pour l'insertion professionnelle et le soutien aux personnes en difficulté à travers divers ateliers et événements. 
+        </p>
+    </div>
+</section>
+
+  <!-- Section Horaires -->
+  <section id="horaires" class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Horaires</h2>
+    <div class="max-w-xl mx-auto">
+      <table class="w-full bg-white rounded shadow overflow-hidden">
+        <thead>
+          <tr class="bg-gray-800 text-white">
+            <th class="py-3 px-4 text-left">Jour</th>
+            <th class="py-3 px-4 text-left">Heures</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-3 px-4">Lundi</td>
+            <td class="py-3 px-4">08:00 - 18:00</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-3 px-4">Mardi</td>
+            <td class="py-3 px-4">08:00 - 18:00</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-3 px-4">Mercredi</td>
+            <td class="py-3 px-4">08:00 - 18:00</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-3 px-4">Jeudi</td>
+            <td class="py-3 px-4">08:00 - 18:00</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-3 px-4">Vendredi</td>
+            <td class="py-3 px-4">08:00 - 18:00</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4">Samedi</td>
+            <td class="py-3 px-4">Sur rendez-vous</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+    <footer class="text-white py-10 degrade-bg">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <!-- Contact Section -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                <div class="text-left">
+                <p>Adresse : <span class="font-semibold hover:text-blue-800">7 Rue Claude Chappe, 25300 Pontarlier</span></p>
+                <p>Adresse : <span class="font-semibold hover:text-blue-800">7 Avenue Charles de Gaulle, 25500 Morteau</span></p>
+                <p>Email : <a href="mailto:boutique@hautdoubsrepassage.fr" class="font-semibold hover:text-blue-800">contact@hautdoubsrepassage.fr</a></p>
+                <p>Téléphone : <a href="tel:+33312345678" class="font-semibold hover:text-blue-800">03 12 34 56 78</a></p>
+                </div>
+            </div>
+            <!-- Social Media Section -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Suivez-nous</h3>
+                <ul class="flex space-x-4 justify-center">
+                    <li>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-blue-800">
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-green-400">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="hover:text-black">
+                            TikTok
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Legal Section -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Informations</h3>
+                <ul>
+                    <li>
+                        <a href="#mentions-legales" class="hover:text-blue-800">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="#politique-confidentialite" class="hover:text-blue-800">Politique de confidentialité</a>
+                    </li>
+                    <li>
+                        <a href="#gestion-cookies" class="hover:text-blue-800">Gestion des cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-sm">
+            <p>Haut Doubs Repassage - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
